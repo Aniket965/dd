@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <home/>
     <Footer/>
   </div>
 </template>
@@ -8,17 +9,19 @@
 <script>
 
 import Footer from './components/Footer.vue';
+import home from './pages/home.vue';
 
 export default {
   name: 'app',
   components: {
+    home,
     Footer,
   },
 };
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Poppins:400,500,700&display=swap');
 html,body {
   margin:0;
   padding: 0;
@@ -28,5 +31,14 @@ html,body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.emptyspace {
+  width: 100%;
+  height: 2rem;
+}
+.center-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
