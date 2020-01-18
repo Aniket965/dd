@@ -1,5 +1,25 @@
 <template>
     <div>
+        <div class="outdoor center-child">
+            <div class="wrapper">
+            <div class="emptyspace"></div>
+            <div class="emptyspace"></div>
+            <h1>OUTDOOR FURNITURE</h1>
+            <div class="showcase-grid">
+                <showcasecard name="COFFEE SET" uri="coffeeset.jpg"/>
+                <showcasecard name="DINING TABLE" uri="dining.jpg"/>
+            </div>
+            <p>
+             Besides these we also sell bar,launger  …. etc sdflsdfjlasdf d sdfsddsfsdafdf
+            </p>
+            <div class="view-more-button">
+                VIEW MORE
+            </div>
+            <div class="emptyspace"></div>
+            <div class="emptyspace"></div>
+            </div>
+
+        </div>
         <div class="products">
             <div class="emptyspace"></div>
             <div class="emptyspace"></div>
@@ -86,6 +106,7 @@
 </div>
 </template>
 <script >
+import showcasecard from '../components/showcase-card.vue';
 import Button from '../components/Button.vue';
 import category from '../components/category.vue';
 
@@ -94,12 +115,34 @@ export default {
   components: {
     Button,
     category,
+    showcasecard,
   },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.showcase-grid {
+    display: grid;
+    gap:1rem;
+    grid-template-columns:  repeat(auto-fill, minmax(500px, 1fr));
+}
+.outdoor {
+    background: #F2F2F2;
+    .wrapper  {
+         width: 90%;
+         max-width: 1200px;
+    }
+    .view-more-button {
+        font-weight: 700;
+        width: fit-content;
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        padding: 1rem 3rem;
+        cursor: pointer;
+    }
+}
 .products {
     h1 {
         text-align: center;
