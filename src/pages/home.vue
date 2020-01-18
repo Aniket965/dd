@@ -1,5 +1,25 @@
 <template>
     <div>
+        <div class="landing">
+        
+            <swiper :options="swiperOption">
+                <swiper-slide>
+                    <div class="landing-slide">
+                        <img src="../assets/back1.jpg" alt="" srcset="">
+                    </div>
+                </swiper-slide>
+                <!-- <swiper-slide><img src="../assets/logo.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="../assets/logo.png" alt="" srcset=""></swiper-slide> -->
+
+                <div class="swiper-pagination" slot="pagination"></div>
+                <!-- <div class="swiper-button-prev" slot="button-prev"></div>
+                <div class="swiper-button-next" slot="button-next"></div> -->
+            </swiper>
+            <div class="tagline">
+                <h1>DESIGN N DECORUS</h1>
+                <p>Let your spaces create togetherness</p>
+            </div>
+        </div>
         <div class="outdoor center-child">
             <div class="wrapper">
             <div class="emptyspace"></div>
@@ -106,6 +126,7 @@
 </div>
 </template>
 <script >
+import { swiper, swiperSlide } from 'vue-awesome-swiper';
 import showcasecard from '../components/showcase-card.vue';
 import Button from '../components/Button.vue';
 import category from '../components/category.vue';
@@ -116,12 +137,53 @@ export default {
     Button,
     category,
     showcasecard,
+    swiper,
+    swiperSlide,
   },
+  data() {
+      return {
+        swiperOption: {
+          pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true
+          }
+        }
+      }
+    },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.landing {
+    position: relative;
+    .tagline {
+        h1 {
+            font-size: 2.4rem;
+        }
+        position: absolute;
+        z-index: 15;
+        width: fit-content;
+        background: black;
+        color: white;
+        padding: 1rem 3rem;
+        bottom: 2rem;
+        right: 4rem;
+    }
+}
+.landing-slide  img{
+    width: 100vw;
+    // height: 100vh;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    overflow: hidden;
+}
+.landing-slide  {
+    max-height: 100vh;
+    overflow: hidden;
+    max-width: 100vw;
+}
 .showcase-grid {
     display: grid;
     gap:1rem;

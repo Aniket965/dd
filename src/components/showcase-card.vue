@@ -20,6 +20,7 @@ export default {
   transform: scale(1.2);
 }
 .showcase {
+
     position: relative;
     width: fit-content;
     overflow: hidden;
