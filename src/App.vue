@@ -31,6 +31,7 @@ html,body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --swiper-theme-color: #b89a51;
 }
 .emptyspace {
   width: 100%;
@@ -47,4 +48,5 @@ html,body {
           background: darken(#b89a51, 10%);
      }
   }
+
 </style>
