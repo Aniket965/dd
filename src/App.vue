@@ -41,4 +41,10 @@ html,body {
   justify-content: center;
   align-items: center;
 }
+.vnb-button {
+    background: #b89a51;
+     &:hover { 
+          background: darken(#b89a51, 10%);
+     }
+  }
 </style>

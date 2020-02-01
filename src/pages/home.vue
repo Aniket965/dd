@@ -1,5 +1,7 @@
 <template>
-  <div>
+  <div style="position:relative;">
+    <vue-navigation-bar :options="navbarOptions" />
+
     <div class="landing">
       <swiper :options="swiperOption">
         <swiper-slide>
@@ -144,7 +146,87 @@ export default {
           el: ".swiper-pagination",
           dynamicBullets: true
         }
-      }
+      },
+       navbarOptions: {
+            elementId: 'main-navbar',
+            isUsingVueRouter: false,
+            mobileBreakpoint: 992,
+            brandImagePath: './',
+            brandImage: require('@/assets/logo.png'),
+            brandImageAltText: 'brand-image',
+            showBrandImageInMobilePopup: true,
+            ariaLabelMainNav: 'Main Navigation',
+            tooltipAnimationType: 'shift-away',
+            menuOptionsLeft: [
+              {
+                type: 'link',
+                text: 'About',
+                subMenuOptions: [
+
+                  {
+                    type: "link",
+                    text: "Design N Decorous",
+                    subText: "Let your spaces create togetherness",
+                    path: "./about",
+                  },
+                  {
+                    type: 'hr',
+                  },
+                  {
+                    type: 'link',
+                    text: 'Location',
+                    subText: 'A-31 Rajouri Garden New Delhi - 110027',
+                    path: './locations',
+                  },
+                ]
+              },
+              {
+                type: 'link',
+                text: 'Contact',
+                subMenuOptions: [
+                  {
+                    type: 'link',
+                    text: 'Customer Service',
+                    path: './customer-service'
+                  },
+                  {
+                    type: 'link',
+                    text: 'Accounting',
+                    path: './accounting',
+                  },
+                  {
+                    type: 'hr',
+                  },
+                  {
+                    type: 'link',
+                    text: 'Reception',
+                    path: './reception',
+                    iconLeft: '<svg id="i-telephone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"> <path d="M3 12 C3 5 10 5 16 5 22 5 29 5 29 12 29 20 22 11 22 11 L10 11 C10 11 3 20 3 12 Z M11 14 C11 14 6 19 6 28 L26 28 C26 19 21 14 21 14 L11 14 Z" /> <circle cx="16" cy="21" r="4" /> </svg>',
+                  },
+                ]
+              },
+              {
+                type: 'link',
+                text: 'Products',
+                path: './products',
+                iconRight: '<i class="fa fa-long-arrow-right fa-fw"></i>',
+              },
+            ],
+            menuOptionsRight: [
+              {
+                type: 'button',
+                text: 'ENQUIRY',
+                path: './signup',
+                class: 'button-red'
+              },
+              {
+                type: 'button',
+                text: 'REACH US',
+                path: './login',
+                iconRight: '<svg id="i-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"> <path d="M22 6 L30 16 22 26 M30 16 L2 16" /> </svg>'
+              }
+            ]
+          }
     };
   }
 };
@@ -273,4 +355,7 @@ export default {
     max-width: 800px;
   }
 }
+
+
+
 </style>
