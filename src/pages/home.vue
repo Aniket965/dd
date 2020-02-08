@@ -6,7 +6,7 @@
       <swiper :options="swiperOption">
         <swiper-slide>
           <div class="landing-slide">
-            <img src="../assets/back1.jpg" alt srcset />
+            <img src="../assets/banner1.jpg" alt srcset />
           </div>
         </swiper-slide>
         <!-- <swiper-slide><img src="../assets/logo.png" alt="" srcset=""></swiper-slide>
@@ -33,8 +33,8 @@
           <showcasecard name="COFFEE SET" uri="coffeeset.jpg" />
           <showcasecard name="DINING TABLE" uri="dining.jpg" />
         </div>
-        <p>Besides these we also sell bar,launger …. etc sdflsdfjlasdf d sdfsddsfsdafdf</p>
-        <div class="view-more-button">VIEW MORE</div>
+        <p>The first in "Design N Decorous" line of design is a brand called “Hoch” which is a one stop solution for all the Outdoor products viz wicker furniture, Umbrella, Gazebo, Tensile, Pergola etc. </p>
+       <a href="/hoch/hoch.html">  <div class="view-more-button">VIEW MORE</div> </a>
         <div class="emptyspace"></div>
         <div class="emptyspace"></div>
       </div>
@@ -47,21 +47,18 @@
       <div class="emptyspace"></div>
       <div class="center-child">
         <div class="product-grid">
-          <category name="BLINDS" uri="blinds.png" />
+        
+        <category name="OUTDOOR FURNITURE" uri="beach11.png" url="/hoch/hoch.html" />
+        <category name="BLINDS" uri="curtain.png" url="/blinds/blinds/blinds.html" />
+        <category name="UMBRELLA" uri="umbrella1.png" url="/hoch/hoch.html" />
+         <category name="AWNINGS" uri="awning3.png" url="/awnings/awnings/awnings.html" />
+        <category name="WOODEN FLOORING" uri="wood.png" url="/wooden flooring/woodenflooring/woodenflooring.html" />        
           <category name="ARITIFICAL GRASS" uri="grass.png" />
-          <category name="GAZEBO" uri="gazebo.png" />
-          <category name="BLINDS" uri="blinds.png" />
-          <category name="GAZEBO" uri="gazebo.png" />
-          <category name="ARITIFICAL GRASS" uri="grass.png" />
-          <category name="BLINDS" uri="blinds.png" />
-          <category name="ARITIFICAL GRASS" uri="grass.png" />
-          <category name="GAZEBO" uri="gazebo.png" />
-          <category name="BLINDS" uri="blinds.png" />
-          <category name="GAZEBO" uri="gazebo.png" />
-          <category name="BLINDS" uri="blinds.png" />
-          <category name="ARITIFICAL GRASS" uri="grass.png" />
-          <category name="GAZEBO" uri="gazebo.png" />
-          <category name="GAZEBO" uri="gazebo.png" />
+          <category name="GAZEBO" uri="gazebo1.png" url="/hoch/hoch.html" />
+          
+         
+          
+          
         </div>
       </div>
       <div class="emptyspace"></div>
@@ -171,6 +168,12 @@ export default {
                   },
                   {
                     type: 'hr',
+                  },
+                  {
+                    type: "link",
+                    text: "Hoch Furnitures",
+                    subText: "German Outdoor Furniture",
+                    path: "/hoch/hoch.html",
                   },
                   {
                     type: 'link',

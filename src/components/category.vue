@@ -1,9 +1,11 @@
 <template>
   <div class="category">
+  <a :href="url">
     <div class="center-child">
       <img :src="require(`@/assets/${uri}`)" alt="">
       </div>
       <div class="name">{{name}}</div>
+      </a>
   </div>
 </template>
 <script >
@@ -19,6 +21,10 @@ export default {
 
 
 <style scoped lang="scss">
+ a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+ }
 .category {
   // background: pink;
   cursor: pointer;
