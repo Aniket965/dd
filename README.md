@@ -1,5 +1,5 @@
 # designndecorous
-
+![Build and Deploy](https://github.com/Aniket965/dd/workflows/Build%20and%20Deploy/badge.svg)
 ## Project setup
 ```
 npm install
