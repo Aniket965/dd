@@ -7,6 +7,28 @@
         <swiper-slide>
           <div class="landing-slide">
             <img src="../assets/banner1.jpg" alt srcset />
+            
+          </div>
+        
+        </swiper-slide>
+        <swiper-slide>
+          <div class="landing-slide">
+            <img src="../assets/2.jpg" alt srcset />
+            
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="landing-slide">
+            <img src="../assets/4.jpg" alt srcset />
+            
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="landing-slide">
+            <img src="../assets/5.jpg" alt srcset />
+            
           </div>
         </swiper-slide>
         <!-- <swiper-slide><img src="../assets/logo.png" alt="" srcset=""></swiper-slide>
@@ -31,7 +53,7 @@
         <h1>OUTDOOR FURNITURE</h1>
         <div class="showcase-grid">
           <showcasecard name="COFFEE SET" uri="coffeeset.jpg" />
-          <showcasecard name="DINING TABLE" uri="dining.jpg" />
+          <showcasecard name="DINING SET" uri="dining.jpg" />
         </div>
         <p>The first in "Design N Decorous" line of design is a brand called “Hoch” which is a one stop solution for all the Outdoor products viz wicker furniture, Umbrella, Gazebo, Tensile, Pergola etc. </p>
        <a href="/hoch/hoch.html">  <div class="view-more-button">VIEW MORE</div> </a>
@@ -49,9 +71,9 @@
         <div class="product-grid">
         
         <category name="OUTDOOR FURNITURE" uri="beach11.png" url="/hoch/hoch.html" />
-        <category name="BLINDS" uri="curtain.png" url="/blinds/blinds/blinds.html" />
+        <category name="BLINDS" uri="curtain.png" url="/blinds/Blinds.html" />
         <category name="UMBRELLA" uri="umbrella1.png" url="/hoch/hoch.html" />
-         <category name="AWNINGS" uri="awning3.png" url="/awnings/awnings/awnings.html" />
+         <category name="AWNINGS" uri="awning3.png" url="/awning/awning.html" />
         <category name="WOODEN FLOORING" uri="wood.png" url="/wooden flooring/woodenflooring/woodenflooring.html" />        
           <category name="ARITIFICAL GRASS" uri="grass.png" />
           <category name="GAZEBO" uri="gazebo1.png" url="/hoch/hoch.html" />
@@ -115,7 +137,7 @@
       <div class="emptyspace"></div>
       <div class="emptyspace"></div>
       <div class="center-child">
-        <Button text="ENQUIRY" />
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaeIn8d04jC3d-j6DHnD-dym0BVDV6GTGLZZMJBXRt159mAg/viewform"> <Button text="ENQUIRY" /></a>
       </div>
       <div class="emptyspace"></div>
     </div>

@@ -21,10 +21,6 @@ export default {
 
 
 <style scoped lang="scss">
- a, a:hover, a:focus, a:active {
-      text-decoration: none;
-      color: inherit;
- }
 .category {
   // background: pink;
   cursor: pointer;
