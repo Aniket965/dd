@@ -3,11 +3,10 @@
     <vue-navigation-bar :options="navbarOptions" />
 
     <div class="landing">
-      <swiper :options="swiperOption">
+      <swiper  :options="swiperOption" >
         <swiper-slide>
           <div class="landing-slide">
             <img src="../assets/banner1.jpg" alt srcset />
-            
           </div>
         
         </swiper-slide>
@@ -43,7 +42,7 @@
           <h1>DESIGN N DECORUS</h1>
           <p>Let your spaces create togetherness</p>
         </div>
-        <Button id="git" text="GET IN TOUCH" />
+        <Button id="git" text="GET IN TOUCH" uri="https://maps.google.com/maps?ll=28.64901,77.125242&z=16&t=m&hl=en-GB&gl=IN&mapclient=embed&cid=12403036018815724194" />
       </div>
     </div>
     <div class="outdoor center-child">
@@ -56,12 +55,12 @@
           <showcasecard name="DINING SET" uri="dining.jpg" />
         </div>
         <p>The first in "Design N Decorous" line of design is a brand called “Hoch” which is a one stop solution for all the Outdoor products viz wicker furniture, Umbrella, Gazebo, Tensile, Pergola etc. </p>
-       <a href="/hoch/hoch.html">  <div class="view-more-button">VIEW MORE</div> </a>
+       <a class="nodeco" href="/hoch/hoch.html">  <div class="view-more-button">VIEW MORE</div> </a>
         <div class="emptyspace"></div>
         <div class="emptyspace"></div>
       </div>
     </div>
-    <div class="products">
+    <div id="products" class="products">
       <div class="emptyspace"></div>
       <div class="emptyspace"></div>
       <h1>PRODUCTS</h1>
@@ -137,7 +136,7 @@
       <div class="emptyspace"></div>
       <div class="emptyspace"></div>
       <div class="center-child">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeaeIn8d04jC3d-j6DHnD-dym0BVDV6GTGLZZMJBXRt159mAg/viewform"> <Button text="ENQUIRY" /></a>
+        <Button text="ENQUIRY" uri="https://docs.google.com/forms/d/e/1FAIpQLSeaeIn8d04jC3d-j6DHnD-dym0BVDV6GTGLZZMJBXRt159mAg/viewform" />
       </div>
       <div class="emptyspace"></div>
     </div>
@@ -163,8 +162,11 @@ export default {
       swiperOption: {
         pagination: {
           el: ".swiper-pagination",
-          dynamicBullets: true
-        }
+          dynamicBullets: true,
+        },
+          autoplay: {
+          delay: 3000,
+      },
       },
        navbarOptions: {
             elementId: 'main-navbar',
@@ -201,7 +203,7 @@ export default {
                     type: 'link',
                     text: 'Location',
                     subText: 'A-31 Rajouri Garden New Delhi - 110027',
-                    path: './locations',
+                    path: 'https://maps.google.com/maps?ll=28.64901,77.125242&z=16&t=m&hl=en-GB&gl=IN&mapclient=embed&cid=12403036018815724194',
                   },
                 ]
               },
@@ -233,7 +235,7 @@ export default {
               {
                 type: 'link',
                 text: 'Products',
-                path: './products',
+                path: '#products',
                 iconRight: '<i class="fa fa-long-arrow-right fa-fw"></i>',
               },
             ],
@@ -241,13 +243,13 @@ export default {
               {
                 type: 'button',
                 text: 'ENQUIRY',
-                path: './signup',
+                path: 'https://docs.google.com/forms/d/e/1FAIpQLSeaeIn8d04jC3d-j6DHnD-dym0BVDV6GTGLZZMJBXRt159mAg/viewform',
                 class: 'button-red'
               },
               {
                 type: 'button',
                 text: 'REACH US',
-                path: './login',
+                path: 'https://maps.google.com/maps?ll=28.64901,77.125242&z=16&t=m&hl=en-GB&gl=IN&mapclient=embed&cid=12403036018815724194',
                 iconRight: '<svg id="i-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"> <path d="M22 6 L30 16 22 26 M30 16 L2 16" /> </svg>'
               }
             ]

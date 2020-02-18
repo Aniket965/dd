@@ -1,5 +1,5 @@
 <template>
-  <div class="button"> {{text}}
+  <div class="button" v-on:click="openLink()" > {{text}}
   </div>
 </template>
 <script >
@@ -7,7 +7,13 @@ export default {
   name: 'Button',
   props: {
     text: String,
+    uri:String
   },
+  methods: {
+    openLink() {
+          window.open(this.$props.uri, "_blank");    
+    },
+  }
 };
 </script>
 
