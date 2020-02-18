@@ -8,7 +8,23 @@
           <div class="landing-slide">
             <img src="../assets/banner1.jpg" alt srcset />
           </div>
+          </swiper-slide>
+
+           <swiper-slide>
+          <div class="landing-slide">
+            <img src="../assets/5.jpg" alt srcset />
+            
+          </div>
+        </swiper-slide>
         
+          <swiper-slide>
+          <div class="landing-slide">
+            <img src="../assets/1.jpg" alt srcset />
+          </div>
+        
+
+
+
         </swiper-slide>
         <swiper-slide>
           <div class="landing-slide">
@@ -24,12 +40,7 @@
           </div>
         </swiper-slide>
 
-        <swiper-slide>
-          <div class="landing-slide">
-            <img src="../assets/5.jpg" alt srcset />
-            
-          </div>
-        </swiper-slide>
+       
         <!-- <swiper-slide><img src="../assets/logo.png" alt="" srcset=""></swiper-slide>
         <swiper-slide><img src="../assets/logo.png" alt="" srcset=""></swiper-slide>-->
 
@@ -214,12 +225,12 @@ export default {
                   {
                     type: 'link',
                     text: 'Customer Service',
-                    path: './customer-service'
+                    path: 'mailto:info@designndecorous.com'
                   },
                   {
                     type: 'link',
-                    text: 'Accounting',
-                    path: './accounting',
+                    text: 'Collaboration',
+                    path: 'tel:9667162877',
                   },
                   {
                     type: 'hr',
@@ -227,7 +238,7 @@ export default {
                   {
                     type: 'link',
                     text: 'Reception',
-                    path: './reception',
+                    path: 'tel:9667162855',
                     iconLeft: '<svg id="i-telephone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"> <path d="M3 12 C3 5 10 5 16 5 22 5 29 5 29 12 29 20 22 11 22 11 L10 11 C10 11 3 20 3 12 Z M11 14 C11 14 6 19 6 28 L26 28 C26 19 21 14 21 14 L11 14 Z" /> <circle cx="16" cy="21" r="4" /> </svg>',
                   },
                 ]
