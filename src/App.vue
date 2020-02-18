@@ -27,7 +27,16 @@ html,body {
   padding: 0;
   scroll-behavior: smooth;
 }
+.no-deco {
+text-decoration: none ;
+color: inherit;
+}
 
+.no-deco:hover {
+    color:inherit;
+    text-decoration:none;
+    cursor:pointer;
+}
 #app {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;

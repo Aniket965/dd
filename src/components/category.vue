@@ -1,6 +1,6 @@
 <template>
   <div class="category">
-  <a :href="url">
+  <a class="no-deco" :href="url">
     <div class="center-child">
       <img :src="require(`@/assets/${uri}`)" alt="">
       </div>
