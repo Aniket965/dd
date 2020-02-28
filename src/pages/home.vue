@@ -134,14 +134,7 @@
       <h1>HAVE QUESTIONS?</h1>
       <div class="center-child">
         <p>
-          Design and Decorous is the brain child of an Entrepreneur with a vision,
-          “Let your spaces create togetherness”.
-          We are one stop shop for Blinds, Awnings,
-          Outdoor Furniture and Wooden Flooring.
-          We promises stringent quality control, bespoke designer pieces,
-          Innovative patterns and designs, Utility and Utopian options.
-          Whatever you can perceive of, we have it all.
-          Give us a chance to redefine and redesign your spaces.
+          With a vision “let your spaces create togetherness” Design N Decorous is a one stop solution for all your interior and exterior needs. With a wide spectrum of products and even wider choices, we have everything to meet your space requirements whether home or office. Our professional team of highly skilled craftsmen and foremen makes it possible to serve your expectation of high quality product in scheduled time and competitive prices. All our products are customised and handwrought, designed and manufactured  specifically to match your comfort. Each product is put through rigorous tests and quality checks to ensure the finished product is functionally superior, aesthetically pleasing and extremely high on endurance thereby bringing you products that stay in style for years and years around.
         </p>
       </div>
       <div class="emptyspace"></div>
