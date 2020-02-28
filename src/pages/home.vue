@@ -3,44 +3,36 @@
     <vue-navigation-bar :options="navbarOptions" />
 
     <div class="landing">
-      <swiper  :options="swiperOption" >
+      <swiper :options="swiperOption">
         <swiper-slide>
           <div class="landing-slide">
             <img src="../assets/banner1.jpg" alt srcset />
           </div>
-          </swiper-slide>
+        </swiper-slide>
 
-           <swiper-slide>
+        <swiper-slide>
           <div class="landing-slide">
             <img src="../assets/5.jpg" alt srcset />
-            
           </div>
         </swiper-slide>
-        
-          <swiper-slide>
+
+        <swiper-slide>
           <div class="landing-slide">
             <img src="../assets/1.jpg" alt srcset />
           </div>
-        
-
-
-
         </swiper-slide>
         <swiper-slide>
           <div class="landing-slide">
             <img src="../assets/2.jpg" alt srcset />
-            
           </div>
         </swiper-slide>
 
         <swiper-slide>
           <div class="landing-slide">
             <img src="../assets/4.jpg" alt srcset />
-            
           </div>
         </swiper-slide>
 
-       
         <!-- <swiper-slide><img src="../assets/logo.png" alt="" srcset=""></swiper-slide>
         <swiper-slide><img src="../assets/logo.png" alt="" srcset=""></swiper-slide>-->
 
@@ -53,7 +45,11 @@
           <h1>DESIGN N DECORUS</h1>
           <p>Let your spaces create togetherness</p>
         </div>
-        <Button id="git" text="GET IN TOUCH" uri="https://maps.google.com/maps?ll=28.64901,77.125242&z=16&t=m&hl=en-GB&gl=IN&mapclient=embed&cid=12403036018815724194" />
+        <Button
+          id="git"
+          text="GET IN TOUCH"
+          uri="https://maps.google.com/maps?ll=28.64901,77.125242&z=16&t=m&hl=en-GB&gl=IN&mapclient=embed&cid=12403036018815724194"
+        />
       </div>
     </div>
     <div class="outdoor center-child">
@@ -65,8 +61,12 @@
           <showcasecard name="COFFEE SET" uri="coffeeset.jpg" />
           <showcasecard name="DINING SET" uri="dining.jpg" />
         </div>
-        <p>The first in "Design N Decorous" line of design is a brand called “Hoch” which is a one stop solution for all the Outdoor products viz wicker furniture, Umbrella, Gazebo, Tensile, Pergola etc. </p>
-       <div class="nodeco" > <a href="/hoch/hoch.html" > <div class="view-more-button">VIEW MORE</div></a> </div>
+        <p>The first in "Design N Decorous" line of design is a brand called “Hoch” which is a one stop solution for all the Outdoor products viz wicker furniture, Umbrella, Gazebo, Tensile, Pergola etc.</p>
+        <div>
+          <a class="no-deco" href="/hoch/hoch.html">
+            <div class="view-more-button">VIEW MORE</div>
+          </a>
+        </div>
         <div class="emptyspace"></div>
         <div class="emptyspace"></div>
       </div>
@@ -79,18 +79,17 @@
       <div class="emptyspace"></div>
       <div class="center-child">
         <div class="product-grid">
-        
-        <category name="OUTDOOR FURNITURE" uri="beach11.png" url="/hoch/hoch.html" />
-        <category name="BLINDS" uri="curtain.png" url="/blinds/Blinds.html" />
-        <category name="UMBRELLA" uri="umbrella1.png" url="/hoch/hoch.html" />
-         <category name="AWNINGS" uri="awning3.png" url="/awning/awning.html" />
-        <category name="WOODEN FLOORING" uri="wood.png" url="/wooden flooring/woodenflooring/woodenflooring.html" />        
+          <category name="OUTDOOR FURNITURE" uri="beach11.png" url="/hoch/hoch.html" />
+          <category name="BLINDS" uri="curtain.png" url="/blinds/Blinds.html" />
+          <category name="UMBRELLA" uri="umbrella1.png" url="/hoch/hoch.html" />
+          <category name="AWNINGS" uri="awning3.png" url="/awning/awning.html" />
+          <category
+            name="WOODEN FLOORING"
+            uri="wood.png"
+            url="/wooden flooring/woodenflooring/woodenflooring.html"
+          />
           <category name="ARITIFICAL GRASS" uri="grass.png" />
           <category name="GAZEBO" uri="gazebo1.png" url="/hoch/hoch.html" />
-          
-         
-          
-          
         </div>
       </div>
       <div class="emptyspace"></div>
@@ -140,7 +139,10 @@
       <div class="emptyspace"></div>
       <div class="emptyspace"></div>
       <div class="center-child">
-        <Button text="ENQUIRY" uri="https://docs.google.com/forms/d/e/1FAIpQLSeaeIn8d04jC3d-j6DHnD-dym0BVDV6GTGLZZMJBXRt159mAg/viewform" />
+        <Button
+          text="ENQUIRY"
+          uri="https://docs.google.com/forms/d/e/1FAIpQLSeaeIn8d04jC3d-j6DHnD-dym0BVDV6GTGLZZMJBXRt159mAg/viewform"
+        />
       </div>
       <div class="emptyspace"></div>
     </div>
@@ -166,98 +168,102 @@ export default {
       swiperOption: {
         pagination: {
           el: ".swiper-pagination",
-          dynamicBullets: true,
+          dynamicBullets: true
         },
-          autoplay: {
-          delay: 3000,
+        autoplay: {
+          delay: 3000
+        }
       },
-      },
-       navbarOptions: {
-            elementId: 'main-navbar',
-            isUsingVueRouter: false,
-            mobileBreakpoint: 992,
-            brandImagePath: './',
-            brandImage: require('@/assets/logo.png'),
-            brandImageAltText: 'brand-image',
-            showBrandImageInMobilePopup: true,
-            ariaLabelMainNav: 'Main Navigation',
-            tooltipAnimationType: 'shift-away',
-            menuOptionsLeft: [
+      navbarOptions: {
+        elementId: "main-navbar",
+        isUsingVueRouter: false,
+        mobileBreakpoint: 992,
+        brandImagePath: "./",
+        brandImage: require("@/assets/logo.png"),
+        brandImageAltText: "brand-image",
+        showBrandImageInMobilePopup: true,
+        ariaLabelMainNav: "Main Navigation",
+        tooltipAnimationType: "shift-away",
+        menuOptionsLeft: [
+          {
+            type: "link",
+            text: "About",
+            subMenuOptions: [
               {
-                type: 'link',
-                text: 'About',
-                subMenuOptions: [
-
-                  {
-                    type: "link",
-                    text: "Design N Decorous",
-                    subText: "Let your spaces create togetherness",
-                    path: "./about",
-                  },
-                  {
-                    type: 'hr',
-                  },
-                  {
-                    type: "link",
-                    text: "Hoch Furnitures",
-                    subText: "German Outdoor Furniture",
-                    path: "/hoch/hoch.html",
-                  },
-                  {
-                    type: 'link',
-                    text: 'Location',
-                    subText: 'A-31 Rajouri Garden New Delhi - 110027',
-                    path: 'https://maps.google.com/maps?ll=28.64901,77.125242&z=16&t=m&hl=en-GB&gl=IN&mapclient=embed&cid=12403036018815724194',
-                  },
-                ]
+                type: "link",
+                text: "Design N Decorous",
+                subText: "Let your spaces create togetherness",
+                path: "./about"
               },
               {
-                type: 'link',
-                text: 'Contact',
-                subMenuOptions: [
-                  {
-                    type: 'link',
-                    text: 'Customer Service',
-                    path: 'mailto:info@designndecorous.com'
-                  },
-                  {
-                    type: 'link',
-                    text: 'Collaboration',
-                    path: 'tel:9667162877',
-                  },
-                  {
-                    type: 'hr',
-                  },
-                  {
-                    type: 'link',
-                    text: 'Reception',
-                    path: 'tel:9667162855',
-                    iconLeft: '<svg id="i-telephone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"> <path d="M3 12 C3 5 10 5 16 5 22 5 29 5 29 12 29 20 22 11 22 11 L10 11 C10 11 3 20 3 12 Z M11 14 C11 14 6 19 6 28 L26 28 C26 19 21 14 21 14 L11 14 Z" /> <circle cx="16" cy="21" r="4" /> </svg>',
-                  },
-                ]
+                type: "hr"
               },
               {
-                type: 'link',
-                text: 'Products',
-                path: '#products',
-                iconRight: '<i class="fa fa-long-arrow-right fa-fw"></i>',
-              },
-            ],
-            menuOptionsRight: [
-              {
-                type: 'button',
-                text: 'ENQUIRY',
-                path: 'https://docs.google.com/forms/d/e/1FAIpQLSeaeIn8d04jC3d-j6DHnD-dym0BVDV6GTGLZZMJBXRt159mAg/viewform',
-                class: 'button-red'
+                type: "link",
+                text: "Hoch Furnitures",
+                subText: "German Outdoor Furniture",
+                path: "/hoch/hoch.html"
               },
               {
-                type: 'button',
-                text: 'REACH US',
-                path: 'https://maps.google.com/maps?ll=28.64901,77.125242&z=16&t=m&hl=en-GB&gl=IN&mapclient=embed&cid=12403036018815724194',
-                iconRight: '<svg id="i-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"> <path d="M22 6 L30 16 22 26 M30 16 L2 16" /> </svg>'
+                type: "link",
+                text: "Location",
+                subText: "A-31 Rajouri Garden New Delhi - 110027",
+                path:
+                  "https://maps.google.com/maps?ll=28.64901,77.125242&z=16&t=m&hl=en-GB&gl=IN&mapclient=embed&cid=12403036018815724194"
               }
             ]
+          },
+          {
+            type: "link",
+            text: "Contact",
+            subMenuOptions: [
+              {
+                type: "link",
+                text: "Customer Service",
+                path: "mailto:info@designndecorous.com"
+              },
+              {
+                type: "link",
+                text: "Collaboration",
+                path: "tel:9667162877"
+              },
+              {
+                type: "hr"
+              },
+              {
+                type: "link",
+                text: "Reception",
+                path: "tel:9667162855",
+                iconLeft:
+                  '<svg id="i-telephone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"> <path d="M3 12 C3 5 10 5 16 5 22 5 29 5 29 12 29 20 22 11 22 11 L10 11 C10 11 3 20 3 12 Z M11 14 C11 14 6 19 6 28 L26 28 C26 19 21 14 21 14 L11 14 Z" /> <circle cx="16" cy="21" r="4" /> </svg>'
+              }
+            ]
+          },
+          {
+            type: "link",
+            text: "Products",
+            path: "#products",
+            iconRight: '<i class="fa fa-long-arrow-right fa-fw"></i>'
           }
+        ],
+        menuOptionsRight: [
+          {
+            type: "button",
+            text: "ENQUIRY",
+            path:
+              "https://docs.google.com/forms/d/e/1FAIpQLSeaeIn8d04jC3d-j6DHnD-dym0BVDV6GTGLZZMJBXRt159mAg/viewform",
+            class: "button-red"
+          },
+          {
+            type: "button",
+            text: "REACH US",
+            path:
+              "https://maps.google.com/maps?ll=28.64901,77.125242&z=16&t=m&hl=en-GB&gl=IN&mapclient=embed&cid=12403036018815724194",
+            iconRight:
+              '<svg id="i-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"> <path d="M22 6 L30 16 22 26 M30 16 L2 16" /> </svg>'
+          }
+        ]
+      }
     };
   }
 };
@@ -386,7 +392,4 @@ export default {
     max-width: 800px;
   }
 }
-
-
-
 </style>
