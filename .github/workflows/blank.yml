@@ -16,7 +16,7 @@ jobs:
       - name: Build
         run: npm run build
       - name: Rename Project in firebaserc
-        run: echo ("{\"projects\":{\"default\":\"dd-dapp\"}}") >> .firebaserc
+        run: echo "{\"projects\":{\"default\":\"dd-dapp\"}}" >> .firebaserc
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
