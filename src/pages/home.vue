@@ -61,7 +61,7 @@
           <showcasecard name="COFFEE SET" uri="coffeeset.jpg" />
           <showcasecard name="DINING SET" uri="dining.jpg" />
         </div>
-        <p>The first in "Design N Decorous" line of design is a brand called “Hoch” which is a one stop solution for all the Outdoor products viz wicker furniture, Umbrella, Gazebo, Tensile, Pergola etc.</p>
+        <p>The first in "Design N Decorous" line of design is a brand called “Hoch” which is a one stop solution for all the Outdoor products viz Wicker Furniture, Umbrella, Gazebo, Tensile, Automated Folding Roof and many more.</p>
         <div>
           <a class="no-deco" href="/hoch/hoch.html">
             <div class="view-more-button">VIEW MORE</div>
