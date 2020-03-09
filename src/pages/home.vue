@@ -82,7 +82,7 @@
           <category name="OUTDOOR FURNITURE" uri="beach11.png" url="/hoch/hoch.html" />
           <category name="BLINDS" uri="curtain.png" url="/blinds/Blinds.html" />
           <category name="UMBRELLA" uri="umbrella1.png" url="/hoch/hoch.html" />
-          <category name="AWNINGS" uri="awning3.png" url="/awning/awning.html" />
+          <category name="AWNINGS" uri="awning.jpeg" url="/awning/awning.html" />
           <category
             name="WOODEN FLOORING"
             uri="wood.png"
