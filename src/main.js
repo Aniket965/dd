@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faFacebook, faInstagram, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import 'vue-navigation-bar/dist/vue-navigation-bar.css';
 import VueNavigationBar from 'vue-navigation-bar';
-import VueAnalytics from 'vue-analytics'
+import VueAnalytics from 'vue-analytics';
 
 
 import App from './App.vue';
@@ -24,10 +24,14 @@ Vue.component('vue-navigation-bar', VueNavigationBar);
 Vue.use(VueAwesomeSwiper);
 
 Vue.use(VueAnalytics, {
-  id: 'UA-128868062-1'
+  id: 'UA-128868062-1',
+  checkDuplicatedScript: true,
+  autoTracking: {
+    screenview: true
+  }
 })
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = true;
 
 new Vue({
   render: h => h(App),

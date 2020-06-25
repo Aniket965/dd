@@ -17,6 +17,14 @@ export default {
     home,
     Footer,
   },
+  mounted() {
+      this.$ga.page('/home');
+  },
+  methods: {
+    track() {
+      this.$ga.page('/')
+    }
+  }
 };
 </script>
 
