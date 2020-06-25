@@ -1,11 +1,14 @@
 <template>
   <div class="category">
   <a class="no-deco" :href="url">
+    <div class="category-grid">
     <div class="center-child">
       <img :src="require(`@/assets/${uri}`)" alt="">
       </div>
       <div class="name">{{name}}</div>
+      </div>
       </a>
+
   </div>
 </template>
 <script >
@@ -21,14 +24,24 @@ export default {
 
 
 <style scoped lang="scss">
+
+.category-grid {
+  height: 150px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
 .category {
-  // background: pink;
   cursor: pointer;
   width: fit-content;
   font-weight: 400;
   text-align: center;
   img {
     width: 100px;
+  }
+  .name {
+    max-width: 100px;
+    align-self: end;
+    text-align: center;
   }
 }
 
