@@ -8,13 +8,13 @@
         <h2>Address</h2>
         <ul>
           <li>
-            A-31
+             <a href="https://goo.gl/maps/5B9XpQYjh9MynwqD6" >A-31</a>
           </li>
           <li>
-            Rajouri Garden
+            <a href="https://goo.gl/maps/5B9XpQYjh9MynwqD6" >Rajouri Garden</a>
           </li>
           <li>
-             New Delhi - 110027
+             <a href="https://goo.gl/maps/5B9XpQYjh9MynwqD6" >New Delhi - 110 027</a> 
           </li>
         </ul>
       </div>
@@ -31,15 +31,15 @@
         <h2>Social</h2>
         <ul>
           <li>
-            <a href="https://www.facebook.com/designndecorous/" >  <font-awesome-icon :icon="['fab', 'facebook']" class="social-icon"/> Facebook</a>
+            <a href="https://www.facebook.com/designndecorous/" >  <font-awesome-icon :icon="['fab', 'facebook']" class="social-icon"/> Design N Decorous</a>
           </li>
           <li>
             <a href="https://www.instagram.com/designdecorous/">
-            <font-awesome-icon :icon="['fab', 'instagram']" class="social-icon"/> Instagram</a>
+            <font-awesome-icon :icon="['fab', 'instagram']" class="social-icon"/> DesignDecorous</a>
           </li>
           <li>
             <a href="mailto:info@designndecorous.com">
-              <font-awesome-icon :icon="['fab', 'google']" class="social-icon"/> Email</a>
+              <font-awesome-icon :icon="['fab', 'google']" class="social-icon"/> info@designndecorous.com</a>
           </li>
         </ul>
       </div>
