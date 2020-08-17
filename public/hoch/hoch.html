@@ -41,6 +41,8 @@
     <script src="js/skel.min.js"></script>
     <script src="js/skel-layers.min.js"></script>
     <script src="js/init.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <!-- <link rel="icon" type="image/png" href="favicon/favicon.ico"/> -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -205,6 +207,63 @@ Create an inviting ambience at home and work.</p> -->
 
             </section>
 
-
-
+      
+            <div id="vapp">
+              </div>
+              <script type="x-template" id="dd-footer">
+                <div class="footer">
+                    <div class="footer-links-grid">
+                      <div>
+                          <img class="logo-full" src='../dd_vertical_logo.png' >
+                      </div>
+                      <div>
+                        <h2>Address</h2>
+                        <ul>
+                          <li>
+                             <a href="https://goo.gl/maps/5B9XpQYjh9MynwqD6" >A-31</a>
+                          </li>
+                          <li>
+                            <a href="https://goo.gl/maps/5B9XpQYjh9MynwqD6" >Rajouri Garden</a>
+                          </li>
+                          <li>
+                             <a href="https://goo.gl/maps/5B9XpQYjh9MynwqD6" >New Delhi - 110 027</a> 
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h2>Phone</h2>
+                        <ul>
+                          
+                          <li><a href="tel:+91966712855">+91 - 9667162855</a></li>
+                          <li><a href="tel:+91966712866">+91 - 9667162866</a></li>
+                          <li><a href="tel:+91966712877">+91 - 9667162877</a></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h2>Social</h2>
+                        <ul>
+                          <li>
+                            <a href="https://www.facebook.com/designndecorous/" >  ➡️ Facebook </a>
+                          </li>
+                          <li>
+                            <a href="https://www.instagram.com/designdecorous/">
+                           ➡️ Instagram</a>
+                          </li>
+                          <li>
+                            <a href="mailto:info@designndecorous.com">
+                                ➡️ info@designndecorous.com</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="footer-copyright">© DESIGN N DECOROUS 2020</div>
+                  </div>
+            </script>
+              <script>
+                const vueApp = new Vue({
+                  el: '#vapp',
+                  template: '#dd-footer',
+                })
+                </script>
+             
 </body>

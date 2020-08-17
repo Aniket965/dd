@@ -101,7 +101,12 @@ export default {
 .social-icon {
   padding-right: 4px;
 }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 1100px) {
+    .footer-links-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+   @media screen and (max-width: 700px) {
     .footer-links-grid {
       grid-template-columns: 1fr;
     }
