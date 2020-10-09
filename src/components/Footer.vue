@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="footer" id="contactus">
     <div class="footer-links-grid">
       <div>
           <img class="logo-full" src='../assets/dd_vertical_logo.png' >
@@ -21,10 +21,10 @@
       <div>
         <h2>Phone</h2>
         <ul>
-          
+          <li><a href="https://wa.me/message/DEZNNSKMCGTTL1">Whatsapp Us</a></li>
           <li><a href="tel:+91966712855">+91 - 9667162855</a></li>
           <li><a href="tel:+91966712866">+91 - 9667162866</a></li>
-          <li><a href="tel:+91966712877">+91 - 9667162877</a></li>
+          
         </ul>
       </div>
       <div>

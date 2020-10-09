@@ -220,7 +220,7 @@ export default {
               {
                 type: "link",
                 text: "Customer Service",
-                path: "mailto:info@designndecorous.com"
+                path: "mailto:m mm@designndecorous.com"
               },
               {
                 type: "link",
@@ -252,6 +252,13 @@ export default {
             text: "ENQUIRY",
             path:
               "https://docs.google.com/forms/d/e/1FAIpQLSeaeIn8d04jC3d-j6DHnD-dym0BVDV6GTGLZZMJBXRt159mAg/viewform",
+            class: "button-red"
+          },
+          {
+            type: "button",
+            text: "WHATSAPP US",
+            path:
+              "https://wa.me/message/DEZNNSKMCGTTL1",
             class: "button-red"
           },
           {
